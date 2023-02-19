@@ -1,4 +1,4 @@
-const Footer = () => {
+const Footer = (props) => {
     return (
         'Footer'
     )
