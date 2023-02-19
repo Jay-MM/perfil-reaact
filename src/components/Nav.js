@@ -1,4 +1,4 @@
-
+import Typewriter from 'typewriter-effect'
 const Nav = ({ setCurrentPage }) => {
 
     return (
@@ -6,9 +6,23 @@ const Nav = ({ setCurrentPage }) => {
         className="navbar bg-dark sticky-top bg-body-tertiary" 
         data-bs-theme="dark"
         >
-            <div className="container-fluid">
-                <a className="navbar-brand" href="#">Jesus Marquez</a>
-            </div>
+            <section className="text-white">
+           
+            <u>
+            <Typewriter
+            
+        options={{
+          strings: [
+            '<',' Hello World', 'I am a FULL-STACK Web Developer', 'I love to code!' , '/>'
+          ],
+          autoStart: true,
+          loop: true,
+          deleteSpeed: 9,
+        }}
+      />
+      </u>
+      </section>
+      <h1 className='text-white fs-3'>Jesus Marquez</h1> 
             <form 
             className="container-fluid justify-content-end">
                 <button 
