@@ -1,5 +1,5 @@
 
-const Nav = ({currentPage, setCurrentPage}) => {
+const Nav = ({ setCurrentPage }) => {
 
     return (
         <nav 

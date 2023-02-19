@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import Header from './components/Header'
 import Nav from './components/Nav'
-import Page from './components/Page'
 import Footer from './components/Footer'
 import About from './components/About'
 import Contact from './components/Contact'
@@ -32,12 +31,25 @@ function App() {
         setCurrentPage={setCurrentPage}
       />
       <br />
-    <Header />
-    <main>
-      {renderPage()}
-    </main>
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      paddingLeft: '444px', 
+      marginTop: 33
+    }}>
+      <Header/>
+      </div>
+        <main 
+        style={{
+          display: 'flex',
+          marginLeft: 12,
+          marginTop: 33,
+          marginBottom:33 }} 
+        >
+        {renderPage()}
+        </main>
     <Footer />
-    </>
+  </>
   );
 }
 
