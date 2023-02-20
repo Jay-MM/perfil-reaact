@@ -3,10 +3,10 @@ const Nav = ({ setCurrentPage }) => {
 
     return (
         <nav 
-        className="navbar bg-dark sticky-top bg-body-tertiary" 
+        className="navbar bg-dark-subtle sticky-top bg-body-tertiary" 
         data-bs-theme="dark"
         >
-            <section className="text-white">
+            <section className="text-success">
            
             <u>
             <Typewriter
@@ -22,7 +22,6 @@ const Nav = ({ setCurrentPage }) => {
       />
       </u>
       </section>
-      <h1 className='text-white fs-3'>Jesus Marquez</h1> 
             <form 
             className="container-fluid justify-content-end">
                 <button 

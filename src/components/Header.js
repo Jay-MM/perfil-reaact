@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Nav from './Nav'
 import Footer from './Footer'
-import About from './About'
+import About from './About/About'
 import Contact from './Contact'
 import Portfolio from './Portfolio'
 import Resume from './Resume'
@@ -29,16 +29,14 @@ function Header() {
         setCurrentPage={setCurrentPage}
       />
       
-      <main 
+      <main
         style={{
           display: 'flex',
-          marginLeft: 12,
-          marginTop: 33,
-          marginBottom:33 }} 
+          marginTop: 99
+        }}
         >
         {renderPage()}
       </main>
-    <Footer />
   </>
   );
 }

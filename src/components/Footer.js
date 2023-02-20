@@ -14,15 +14,15 @@ const Footer = (props) => {
 
     }}>
         
-        <p style={{ display: 'flex', justifyContent: 'space-between'}}>Created with 
-        <a style={{ marginLeft: '-717px',}}href="https://reactjs.org/">React©️</a>
+        <div style={{ display: 'flex', justifyContent: 'space-between'}}>
+            <p>Created with <a href="https://reactjs.org/"> React©️</a></p>
         <ul>
-            <a href="https://github.com/Jay-MM"><i class="bi bi-github"></i></a>
+            <a href="https://github.com/Jay-MM"><i className="bi bi-github"></i></a>
             {/* TODO: create social profiles and link them here */}
-            <a style={{ marginLeft: '24px',}}href="#"><i class="bi bi-linkedin"></i></a>
-            <a style={{ marginLeft: '24px',}}href="#"><i class="bi bi-stack-overflow"></i></a>
+            <a style={{ marginLeft: '24px',}}href="#"><i className="bi bi-linkedin"></i></a>
+            <a style={{ marginLeft: '24px',}}href="#"><i className="bi bi-stack-overflow"></i></a>
         </ul>
-        </p>
+        </div>
         
     
     </footer>
