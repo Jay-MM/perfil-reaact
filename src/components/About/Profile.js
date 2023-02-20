@@ -5,7 +5,7 @@ const Profile = (props) => {
     className="container-fluid card mb-3 bg-transparent">
     <div className="row g-3">
         <div className="col-md-6">
-        <img src={props.userData.avatar_url} className="img-fluid rounded-start" alt={`${props.userData.login}'s Avatar`} />
+        <img src={props.userData.avatar_url} className="img-fluid rounded-start" alt={"Jesus Marquez's Avatar"} />
         </div>
         <div className="col-md-6">
         <div className="card-body">

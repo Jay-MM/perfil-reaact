@@ -14,7 +14,7 @@ const Footer = (props) => {
 
     }}>
         
-        <div style={{ display: 'flex', justifyContent: 'space-between'}}>
+        <div style={{ display: 'flex', justifyContent: 'flex-end'}}>
             <p>Created with <a href="https://reactjs.org/"> React©️</a></p>
         <ul>
             <a href="https://github.com/Jay-MM"><i className="bi bi-github"></i></a>
