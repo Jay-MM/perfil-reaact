@@ -6,7 +6,7 @@ const Footer = (props) => {
         justifyContent: 'space-evenly',
         position: 'fixed',
          width: '100%',
-        backgroundColor: 'black',
+        backgroundColor: 'transparent',
         diplay: 'flex',
         textAlign: 'center',
         left: '0',
