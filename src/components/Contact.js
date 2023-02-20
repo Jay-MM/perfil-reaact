@@ -46,7 +46,10 @@ const Contact = (props) => {
             display: 'flex',
 
         }}>
-        <h1>Fill out this form wih your name, e-mail and a quick message</h1>
+        <div>
+        <h1>Want to build something with me or have a challange for me to solve?</h1>
+        <h3 className='pt-5'> Fill out this form wih your name, e-mail and a quick message and ill get back in touch with you <span className='text-warning'>ASAP.</span> </h3>
+        </div>
         <form 
         className='container-fluid'
         onSubmit={handleSubmit}
@@ -69,7 +72,7 @@ const Contact = (props) => {
         }}
           />
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <label htmlFor="email">Email: </label>
           <input 
           type="email" 
@@ -85,7 +88,7 @@ const Contact = (props) => {
         />
         </div>
        
-        <div class="form-group">
+        <div className="form-group">
           <label htmlFor="message">Message: </label>
           <textarea 
           name="message"
@@ -103,7 +106,12 @@ const Contact = (props) => {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button type="submit">Submit: </button>
+        <button 
+        type="submit"
+        className="btn btn-success"
+        >
+        Submit: 
+        </button>
         
       </form>
       </div>

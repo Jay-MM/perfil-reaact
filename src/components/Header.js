@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Nav from './Nav'
-import Footer from './Footer'
 import About from './About/About'
 import Contact from './Contact'
 import Portfolio from './Portfolio'
@@ -32,7 +31,8 @@ function Header() {
       <main
         style={{
           display: 'flex',
-          marginTop: 99
+          paddingBottom: '42px',
+          paddingTop: '42px'
         }}
         >
         {renderPage()}
