@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/%7Bperfil-reaact%7D/static/js/main.305fb340.js",
+    "static/js/787.c2f5fb8e.chunk.js": "/%7Bperfil-reaact%7D/static/js/787.c2f5fb8e.chunk.js",
+    "static/media/portfolio.png": "/%7Bperfil-reaact%7D/static/media/portfolio.b9b130f73ccbaadcc5b8.png",
+    "static/media/coding.png": "/%7Bperfil-reaact%7D/static/media/coding.11045a1453017c1bccba.png",
+    "static/media/celebrity-astrology.png": "/%7Bperfil-reaact%7D/static/media/celebrity-astrology.74bda392974085b33081.png",
+    "static/media/social-network-api.png": "/%7Bperfil-reaact%7D/static/media/social-network-api.c5143f1d26b9f484d954.png",
+    "static/media/we-do.png": "/%7Bperfil-reaact%7D/static/media/we-do.01207aee4888d45386b4.png",
+    "static/media/weather-dashboard.png": "/%7Bperfil-reaact%7D/static/media/weather-dashboard.3cc764acdcfcfa423f80.png",
+    "static/media/jate.png": "/%7Bperfil-reaact%7D/static/media/jate.4de7a69881384f638d88.png",
+    "static/media/note-taker.png": "/%7Bperfil-reaact%7D/static/media/note-taker.1cbc9f93a58f0105c383.png",
+    "index.html": "/%7Bperfil-reaact%7D/index.html",
+    "main.305fb340.js.map": "/%7Bperfil-reaact%7D/static/js/main.305fb340.js.map",
+    "787.c2f5fb8e.chunk.js.map": "/%7Bperfil-reaact%7D/static/js/787.c2f5fb8e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.305fb340.js"
+  ]
+}
