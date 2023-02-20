@@ -24,7 +24,7 @@
 
   1. Navigate to the URL of the live site, 
   2. Browse my portfolio.
-
+    [Visit the live- site !](https://jay-mm.github.io/perfil-reaact/)
   ![portfolio-screenshot](src/assets/portfolio.png)
   
   ## [Credits](#table-of-contents)
