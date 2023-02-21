@@ -52,6 +52,7 @@ const Portfolio = (project) => {
             ))}
           </div>
         </div>
+        
       );
 }
 export default Portfolio
