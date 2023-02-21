@@ -28,7 +28,7 @@
 ![portfolio-screenshot](src/assets/portfolio.png)
   
   ## [Credits](#table-of-contents)
-  
+   
   this app uses the folowing technologies:
   -  React 
   - Typewriter Node Package  
