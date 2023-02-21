@@ -2,18 +2,18 @@ import { useState } from 'react'
 import Project from "./Project"
 
 const Portfolio = (project) => {
-    const [projects] = useState([
+  const [projects] = useState([
+        {
+          name: 'book-search-engine',
+          description: 'A MERN STACK application that allows the user to search for books and save them to read later on.',
+          link: "https://dry-oasis-15794.herokuapp.com/",
+          repo: "https://github.com/Jay-MM/book-engine-search"
+        },
         {
           name: 'jate',
           description: 'a PWA using  Express.js',
           link: " https://evening-spire-25471.herokuapp.com",
           repo: " https://github.com/Jay-MM/pwa-text-editor-"
-        },
-        {
-          name: 'social-network-api',
-          description: 'A social media application using Mongoose and Express.js',
-          link: "https://raw.githubusercontent.com/Jay-MM/social-network-api/main/assets/social-network-api-walkthrough-video.mp4",
-          repo: "https://github.com/Jay-MM/social-network-api"
         },
         {
           name: 'we-do',
@@ -42,8 +42,9 @@ const Portfolio = (project) => {
       ]);
       
       return (
-        <div>
-          <div className="flex-row">
+        <>
+          <div className="container-fluid"
+          style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
             {projects.map((project, idx) => (
               <Project
                 project={project}
@@ -51,8 +52,7 @@ const Portfolio = (project) => {
               />
             ))}
           </div>
-        </div>
-        
+        </>
       );
 }
 export default Portfolio
