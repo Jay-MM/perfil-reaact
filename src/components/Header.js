@@ -32,7 +32,8 @@ function Header() {
       <main
         style={{
           display: 'flex',
-          marginTop: 99
+          marginTop: 21,
+          maxHeight: '100vh',
         }}
         >
         {renderPage()}

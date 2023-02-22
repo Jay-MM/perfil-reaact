@@ -2,23 +2,23 @@ const Resume = (props) => {
     return (
         <section
         style={{
-            paddingLeft: '111px'
+            paddingLeft: '69px'
         }}
         >
-            <div className="container-fluid"
-            style={{display: 'flex'}}>
-                <h5 className="pb-5">
+            <div className="container"
+            style={{display: 'flex', flexDirection: 'column', flexWrap: 'wrap'}}>
+                <h5>
                 {/* TODO: finish resume and link here */}
-                Download my Resume <a href="#"><i class=" p-4 bi bi-cloud-download-fill text-white" ></i></a>
+                Download my Resume <a href="#"><i className=" p-4 bi bi-cloud-download-fill text-white" ></i></a>
                 </h5>
                 <div 
                 style={{
                     display:'flex',
                     flexDirection:'column',
-                    paddingLeft: '777px'
+                    paddingLeft: '77px'
                     }}>
                     <div>
-                        <h1>my skills :</h1>
+                        <h1 style={{paddingLeft: '253px' }}><u>my skills :</u></h1>
                     </div>
                     <div style={{display:'flex', flexDirection: 'row'}}>
                         <div>
@@ -33,7 +33,7 @@ const Resume = (props) => {
                                 <li>Design Systems</li>
                             </ul>
                         </div>
-                        <div style={{paddingLeft: '111px'}}>
+                        <div style={{paddingLeft: '396px'}}>
                             <h3 className="p-3">Back-end :</h3>
                             <ul>
                                 <li>MongoDB, Mongoose</li>
