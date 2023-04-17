@@ -6,12 +6,8 @@ return (
   className="container-fluid" 
   key={name}
   style={{
-    position: 'relative',
-    width: '100%',
-    maxWidth: '666px',
-    height: '333px',
-    margin: '33px',
-    padding: '33px'
+    display: "flex",
+    alignItems: "center"
   }}
   >
     <img
@@ -19,19 +15,32 @@ return (
       alt={(name)}
       className="project-bg"
       style={{
-        position: 'relative',
-        width: '100%',
-        height: '100%'
+        display: "flex",
+        alignItems: "center",
+        width: '75%',
+        height: '75%'
       }}
     />
     <div>
-      <h3 className="d-flex flex-row">
+      <h3  
+      style={{
+      display: "flex",
+      flexDirection: "column",
+      position: "relative",
+      padding: "12px"
+    }}>
         <a  href={link}>{(name)}</a>{' '}
-        <a  href={repo}>
           <i className="fab fa-github"></i>
-        </a>
       </h3>
-      <p>{description}</p>
+      <p 
+      style={{
+      display: "flex",
+      flexDirection: "column",
+      position: "relative",
+      padding: "12px"
+    }}>{description}</p>
+        <a  href={repo}>{("Github repo")}
+        </a>
     </div>
   </div>
 );
