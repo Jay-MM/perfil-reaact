@@ -6,7 +6,7 @@ const Footer = (props) => {
         justifyContent: 'space-evenly',
         position: 'fixed',
          width: '100%',
-        backgroundColor: 'transparent',
+        backgroundColor: 'black',
         diplay: 'flex',
         textAlign: 'center',
         left: '0',
@@ -14,14 +14,15 @@ const Footer = (props) => {
 
     }}>
         
-        <div style={{ display: 'flex', justifyContent: 'flex-end'}}>
+        <div style={{ display: 'flex', justifyContent: 'space-evenly'}}>
             <p>Created with <a href="https://reactjs.org/"> React©️</a></p>
-        <ul>
-            <a href="https://github.com/Jay-MM"><i className="bi bi-github"></i></a>
-            {/* TODO: create social profiles and link them here */}
-            <a style={{ marginLeft: '24px',}}href="#"><i className="bi bi-linkedin"></i></a>
-            <a style={{ marginLeft: '24px',}}href="#"><i className="bi bi-stack-overflow"></i></a>
-        </ul>
+            <ul style={{display: 'flex', marginRight:'24px'}}>
+                <p style={{display: 'flex', marginRight:'24px'}}>Connect with me via my socials!</p>
+                <a href="https://github.com/Jay-MM" target="_blank" rel="noopener noreferrer"><i className="bi bi-github"></i></a>
+                {/* TODO: create social profiles and link them here */}
+                <a style={{ marginLeft: '24px',}}href="https://www.linkedin.com/in/marquez-jesus/" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i></a>
+                <a style={{ marginLeft: '24px',}}href="https://stackoverflow.com/users/21276423/jesus-marquez" target="_blank" rel="noopener noreferrer"><i className="bi bi-stack-overflow"></i></a>
+            </ul>
         </div>
         
     
