@@ -26,8 +26,8 @@ return (
     />
     <div>
       <h3 className="d-flex flex-row">
-        <a p-2 href={link}>{(name)}</a>{' '}
-        <a p-2 href={repo}>
+        <a  href={link}>{(name)}</a>{' '}
+        <a  href={repo}>
           <i className="fab fa-github"></i>
         </a>
       </h3>
