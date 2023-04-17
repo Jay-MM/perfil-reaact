@@ -9,7 +9,7 @@ const Resume = (props) => {
             style={{display: 'flex', flexDirection: 'column', flexWrap: 'wrap'}}>
                 <h5>
                 {/* TODO: finish resume and link here */}
-                Download my Resume <a href="#"><i className=" p-4 bi bi-cloud-download-fill text-white" ></i></a>
+                View my Resume <a href="https://docs.google.com/document/d/12HNUub47qqnPqJkb65Z9b9O36xmTvz9qQ4p7EBIoUWw/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><i className=" p-4 bi bi-folder-symlink-fill" ></i></a>
                 </h5>
                 <div 
                 style={{
