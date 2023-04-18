@@ -26,7 +26,7 @@ const Profile = (props) => {
     <strong>Welcome to my website! My name is Jesus and I am a web developer who is passionate about creating beautiful and functional websites. I believe that websites are not just digital spaces, but also creative canvases that allow me to express myself artistically.</strong>
     <br/>
     <br/>
-    <strong>When I am not coding, you can find me exploring the great outdoors, hiking, or drawing or painting. Drawing is a passion of mine that I have pursued since I was young and I enjoy using my creativity to bring my ideas to life.</strong>
+    <strong>When I am not coding, you can find me exploring the great outdoors, hiking, drawing or painting. Drawing is a passion of mine that I have pursued since I was young and I enjoy using my creativity to bring my ideas to life.</strong>
     <br/>
     <strong style={{textIndent: "75px"}}>I believe that my love for the arts and nature influences my work as a web developer. Just as I strive to create visual art that brings out my creativity, I also aim to create websites that reflect the unique identity and goals of each of my clients.</strong>
     <br/>
