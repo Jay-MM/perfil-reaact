@@ -10,17 +10,23 @@ return (
     alignItems: "center"
   }}
   >
-    <img
-      src={require(`../assets/${name}.png`)}
-      alt={(name)}
-      className="project-bg"
-      style={{
-        display: "flex",
-        alignItems: "center",
-        width: '75%',
-        height: '75%'
-      }}
-    />
+    <a 
+    href={link}
+    target="_blank" rel="noreferrer" 
+    >
+      <img
+        src={require(`../assets/${name}.png`)}
+        alt={(name)}
+        className="project-bg"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          width: '100%',
+          height: '75%',
+          padding: '3rem',
+        }}
+      />
+    </a>
     <div>
       <h3  
       style={{

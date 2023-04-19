@@ -44,12 +44,15 @@ const Portfolio = (project) => {
 
   return (
     <Carousel 
+    className="custom-carousel" 
     style={{ 
-      height: '100%',
-      display: "flex",
-      alignItems: "center",
-      position: "absolute"
-    }}>
+      color: 'green', 
+      display: 'flex', 
+      alignContent: 'center', 
+      justifyItems: 'center', 
+      width: '100vw',
+      height: '75vh',
+      marginTop: '1rem'}}>
       {projects.map((project, idx) => (
         <Carousel.Item key={"project" + idx}>
           <Project project={project} />

@@ -18,6 +18,9 @@ const About = (props) => {
     
         <Profile 
         userData={userData}
+        syle={{
+          marginBottom: '33px'
+        }}
         />
     
     )
