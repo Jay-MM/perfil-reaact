@@ -13,17 +13,42 @@ const Contact = (props) => {
   });
   
   const [errorMessage, setErrorMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
   const { name, email, message } = formState;
+
+  const validateForm = () => {
+    if (!validateEmail(email)) {
+      setErrorMessage('Please enter a valid e-mail address.');
+      return false;
+    } else if (!name.trim()) {
+      setErrorMessage('Please enter your name.');
+      return false;
+    } else if (!message.trim()) {
+      setErrorMessage('Please enter a message.');
+      return false;
+    } else {
+      setErrorMessage('');
+      return true;
+    }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!errorMessage) {
+    if (validateForm()) {
       // Send email using emailjs
       emailjs.sendForm('service_59etvut', 'template_u5z28mm', form.current, '_qKABilleqanHvmW2')
       .then((result) => {
-        console.log('Email successfully sent!');
+        console.log('E-mail successfully sent!');
+        setSuccessMessage('E-mail successfully sent!😀');
+        setTimeout(() => {
+          setSuccessMessage('');
+        }, 1500);
       }, (error) => {
-        console.log('Error sending email: ', error);
+        console.log('Error sending e-mail: ', error);
+        setErrorMessage('Mhmm.. There was an error sending your e-mail😢 Please try again later.');
+        setTimeout(() => {
+          setErrorMessage('');
+        }, 6000);
       });
       // Reset form
       setFormState({
@@ -34,26 +59,8 @@ const Contact = (props) => {
     }
   };
 
-
   const handleChange = (e) => {
-    if (e.target.name === 'email') {
-      const isValid = validateEmail(e.target.value);
-      if (!isValid) {
-        setErrorMessage('Please enter a valid e-mail address.');
-      } else {
-        setErrorMessage('');
-      }
-    } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} must be entered.`);
-      } else {
-        setErrorMessage('');
-      }
-    }
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log('Handle Form', formState);
-    }
+    setFormState({ ...formState, [e.target.name]: e.target.value });
   };
 
   return (
@@ -75,6 +82,8 @@ const Contact = (props) => {
           I'll respond as soon as possible.
         </span>
         </h1>
+      {successMessage && <div className="alert alert-success">{successMessage}</div>}
+      {errorMessage && <div className="alert alert-danger">{errorMessage}</div>}
       <form 
         className='container-fluid'
         ref={form}
@@ -83,8 +92,7 @@ const Contact = (props) => {
             display: 'flex',
             flexDirection: 'column',
             width: '100%',
-            padding: 33,
-            marginBottom: '3rem'
+            padding: 33
         }}>
         <div>
           <label htmlFor="name">Name: </label>
@@ -103,7 +111,7 @@ const Contact = (props) => {
         <div className="form-group">
           <label htmlFor="email">Email: </label>
           <input 
-            type="email" 
+            type="text" 
             name="email" 
             value={email} 
             placeholder="name@example.com"
