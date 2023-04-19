@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.js": "/perfil-reaact/static/js/main.d1dee099.js",
+    "main.js": "/perfil-reaact/static/js/main.b7ad5dad.js",
     "static/js/787.a46cc993.chunk.js": "/perfil-reaact/static/js/787.a46cc993.chunk.js",
-    "static/media/coding.jpg": "/perfil-reaact/static/media/coding.a2e3ef5fef2cddde8f27.jpg",
     "static/media/portfolio.png": "/perfil-reaact/static/media/portfolio.b9b130f73ccbaadcc5b8.png",
     "static/media/background.png": "/perfil-reaact/static/media/background.11045a1453017c1bccba.png",
     "static/media/book-search-engine.png": "/perfil-reaact/static/media/book-search-engine.2ce98a2ff3b7a50c6dae.png",
@@ -13,10 +12,10 @@
     "static/media/JATE.png": "/perfil-reaact/static/media/JATE.4de7a69881384f638d88.png",
     "static/media/note-taker.png": "/perfil-reaact/static/media/note-taker.1cbc9f93a58f0105c383.png",
     "index.html": "/perfil-reaact/index.html",
-    "main.d1dee099.js.map": "/perfil-reaact/static/js/main.d1dee099.js.map",
+    "main.b7ad5dad.js.map": "/perfil-reaact/static/js/main.b7ad5dad.js.map",
     "787.a46cc993.chunk.js.map": "/perfil-reaact/static/js/787.a46cc993.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.d1dee099.js"
+    "static/js/main.b7ad5dad.js"
   ]
 }
