@@ -10,6 +10,7 @@ const Footer = (props) => {
         textAlign: 'center',
         left: '0',
         bottom: '0',
+        marginTop: '3rem'
 
     }}>
         

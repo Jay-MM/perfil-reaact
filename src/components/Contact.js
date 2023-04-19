@@ -83,7 +83,8 @@ const Contact = (props) => {
             display: 'flex',
             flexDirection: 'column',
             width: '100%',
-            padding: 33
+            padding: 33,
+            marginBottom: '3rem'
         }}>
         <div>
           <label htmlFor="name">Name: </label>
